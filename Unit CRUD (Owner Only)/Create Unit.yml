@@ -1,0 +1,33 @@
+info:
+  name: Create Unit
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/units
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Square Feet\",\r
+
+      \    \"abbreviation\": \"SqFt\",\r
+
+      \    \"is_active\": \"1\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{auth_secret_08wg}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: Salesman CRUD (Owner Only)
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

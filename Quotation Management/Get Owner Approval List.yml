@@ -1,0 +1,17 @@
+info:
+  name: Get Owner Approval List
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: http://127.0.0.1:8000/api/quotations/pending-approvals
+  auth:
+    type: bearer
+    token: "{{auth_secret_08wg}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

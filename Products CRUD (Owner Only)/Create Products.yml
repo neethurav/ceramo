@@ -1,0 +1,47 @@
+info:
+  name: Create Products
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/products
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Marvel Statuario\",\r
+
+      \    \"company_id\": 1,\r
+
+      \    \"size\": \"600x1200\",\r
+
+      \    \"unit_id\": 1,\r
+
+      \    \"rate\": 60,\r
+
+      \    \"incentive_amount\": 5,\r
+
+      \    \"incentive_unit\": \"per_sqft\",\r
+
+      \    \"bonus_type\": \"single\",\r
+
+      \    \"min_quantity\": 0,\r
+
+      \    \"is_active\": true\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{auth_secret_08wg}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

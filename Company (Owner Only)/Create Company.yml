@@ -1,0 +1,33 @@
+info:
+  name: Create Company
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/companies
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Somany Ceramics\",\r
+
+      \    \"code\": \"SOM\",\r
+
+      \    \"website\": \"https://www.somany.com\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{auth_secret_08wg}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

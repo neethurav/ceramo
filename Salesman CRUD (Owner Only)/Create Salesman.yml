@@ -1,0 +1,43 @@
+info:
+  name: Create Salesman
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/salesmen
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Madhav Sharma\",\r
+
+      \    \"email\": \"Madhav@ceramo.com\",\r
+
+      \    \"password\": \"password123\",\r
+
+      \    \"designation\": \"Senior Sales Executive\",\r
+
+      \    \"mobile\": \"9999943215\",\r
+
+      \    \"salary\": 35000,\r
+
+      \    \"joining_date\": \"2026-07-25\",\r
+
+      \    \"is_active\": true\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{auth_secret_08wg}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

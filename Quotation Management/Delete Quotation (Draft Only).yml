@@ -1,0 +1,75 @@
+info:
+  name: Delete Quotation (Draft Only)
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: http://127.0.0.1:8000/api/quotations/2
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \    \"date\": \"2026-07-28\",\r
+
+      \    \"valid_until\": \"2026-08-28\",\r
+
+      \    \"customer_name\": \"Rajesh Builders Updated\",\r
+
+      \    \"customer_phone\": \"9876543210\",\r
+
+      \    \"customer_address\": \"New Address, Mumbai - 400001\",\r
+
+      \    \"customer_email\": \"rajesh.updated@builders.com\",\r
+
+      \    \"contractor_name\": \"ABC Constructions Updated\",\r
+
+      \    \"contractor_phone\": \"9876543211\",\r
+
+      \    \"contractor_email\": \"abc.updated@constructions.com\",\r
+
+      \    \"contractor_address\": \"New Address, Pune - 411001\",\r
+
+      \    \"notes\": \"Updated notes for this quotation\",\r
+
+      \    \"terms_conditions\": \"Updated terms: Payment within 45 days\",\r
+
+      \    \"items\": [\r
+
+      \        {\r
+
+      \            \"product_id\": 1,\r
+
+      \            \"quantity\": 1200,\r
+
+      \            \"rate\": 62\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"product_id\": 2,\r
+
+      \            \"quantity\": 600,\r
+
+      \            \"rate\": 87\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{auth_secret_0mb8}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

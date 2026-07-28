@@ -1,0 +1,25 @@
+info:
+  name: Salesman List Own Approved Quotations
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: http://127.0.0.1:8000/api/quotations/my-approved
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: "{{auth_secret_0mb8}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

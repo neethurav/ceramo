@@ -1,0 +1,31 @@
+opencollection: 1.0.0
+
+info:
+  name: Ceramo
+
+request:
+  variables:
+    - name: auth_secret_0yju
+      value: ""
+    - name: auth_secret_14kg
+      value: ""
+    - name: auth_secret_0i7q
+      value: ""
+    - name: auth_secret_08wg
+      value: ""
+    - name: auth_secret_1bk2
+      value: ""
+    - name: auth_secret_17ju
+      value: ""
+    - name: auth_secret_028q
+      value: ""
+    - name: auth_secret_068a
+      value: ""
+    - name: auth_secret_0mb8
+      value: ""
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

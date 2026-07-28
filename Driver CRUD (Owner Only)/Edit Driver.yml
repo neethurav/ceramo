@@ -1,0 +1,43 @@
+info:
+  name: Edit Driver
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://127.0.0.1:8000/api/drivers/5
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "\r
+
+      {\r
+
+      \    \"name\": \"Anjalii Kumar\",\r
+
+      \    \"email\": \"anjalii@ceramo.com\",\r
+
+      \    \"password\": \"password123\",\r
+
+      \    \"mobile\": \"9876643212\",\r
+
+      \    \"license_number\": \"AJ123456789\",\r
+
+      \    \"vehicle_number\": \"KA-01-AB-1234\",\r
+
+      \    \"joining_date\": \"2026-07-25\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{auth_secret_08wg}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
