@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://127.0.0.1:8000/api/login
+  url: https://neethu.astradevelops.in/ceramo/public/api/login
   headers:
     - name: Accept
       value: application/json
@@ -13,13 +13,11 @@ http:
       value: application/json
   body:
     type: json
-    data: "{\r
-
-      \    \"email\": \"madhv@ceramo.com\",\r
-
-      \    \"password\": \"password123\"\r
-
-      }"
+    data: |-
+      {
+          "email": "john.updated@ceramo.com",
+          "password": "password123"
+      }
   auth: inherit
 
 settings:

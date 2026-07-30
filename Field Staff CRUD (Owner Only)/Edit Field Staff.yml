@@ -1,0 +1,35 @@
+info:
+  name: Edit Field Staff
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: https://neethu.astradevelops.in/ceramo/public/api/field-staff/update
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
+  body:
+    type: json
+    data: |-
+      {
+          "id": 21,
+          "name": "Rajesh Kumar Sharma",
+          "email": "rajesh.sharma@fieldstaff.com",
+          "password": "newpassword123",
+          "mobile": "9876543211",
+          "address": "456, New Colony, Mumbai - 400002",
+          "employee_code": "FS002",
+          "joining_date": "2026-07-30",
+          "is_active": true
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

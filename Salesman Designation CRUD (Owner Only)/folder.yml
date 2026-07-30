@@ -1,0 +1,7 @@
+info:
+  name: Salesman Designation CRUD (Owner Only)
+  type: folder
+  seq: 6
+
+request:
+  auth: inherit

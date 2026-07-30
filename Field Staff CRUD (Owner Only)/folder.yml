@@ -1,0 +1,7 @@
+info:
+  name: "Field Staff CRUD (Owner Only) "
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

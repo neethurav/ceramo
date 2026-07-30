@@ -5,12 +5,14 @@ info:
 
 http:
   method: POST
-  url: http://127.0.0.1:8000/api/logout
+  url: https://neethu.astradevelops.in/ceramo/public/api/logout
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
   body:
     type: json
     data: "{\r
@@ -20,9 +22,6 @@ http:
       \    \"password\": \"password123\"\r
 
       }"
-  auth:
-    type: bearer
-    token: "{{auth_secret_0i7q}}"
 
 settings:
   encodeUrl: true

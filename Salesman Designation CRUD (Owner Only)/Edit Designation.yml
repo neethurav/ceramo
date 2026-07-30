@@ -1,0 +1,32 @@
+info:
+  name: Edit Designation
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-designations/update
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
+  body:
+    type: json
+    data: |-
+      
+      {
+          "id": 1,
+          "name": "Senior Sales Executive",
+          "code": "SSM",
+          "base_salary_min": 45000,
+          "base_salary_max": 705000
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

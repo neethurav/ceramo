@@ -1,0 +1,27 @@
+info:
+  name: Delete Field Staff
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: https://neethu.astradevelops.in/ceramo/public/api/field-staff/delete
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
+  body:
+    type: json
+    data: |-
+      {
+          "id": 1
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

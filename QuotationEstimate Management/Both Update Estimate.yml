@@ -1,0 +1,50 @@
+info:
+  name: Both Update Estimate
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: https://neethu.astradevelops.in/ceramo/public/api/estimates/update
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
+  body:
+    type: json
+    data: |-
+      { "id": 1,
+          "date": "2026-07-28",
+          "valid_until": "2026-08-28",
+          "customer_name": "Rajesh Builders Updated",
+          "customer_phone": "9876543210",
+          "customer_address": "New Address, Mumbai - 400001",
+          "customer_email": "rajesh.updated@builders.com",
+          "contractor_name": "ABC Constructions Updated",
+          "contractor_phone": "9876543211",
+          "contractor_email": "abc.updated@constructions.com",
+          "contractor_address": "New Address, Pune - 411001",
+          "notes": "Updated notes for this quotation",
+          "terms_conditions": "Updated terms: Payment within 45 days",
+          "items": [
+              {
+                  "product_id": 1,
+                  "quantity": 1200,
+                  "rate": 62
+              },
+              {
+                  "product_id": 2,
+                  "quantity": 600,
+                  "rate": 87
+              }
+          ]
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

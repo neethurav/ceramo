@@ -1,0 +1,46 @@
+info:
+  name: Owner/Salesman Create/Save Quotation (Draft) Button
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/quotations
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
+  body:
+    type: json
+    data: |-
+      {
+          "date": "2026-07-28",
+          "valid_until": "2026-08-28",
+          "customer_name": "c1h",
+          "customer_phone": "12",
+          "customer_address": "ee",
+          "customer_email": "customer@example.com",
+          "contractor_name": "dd",
+          "contractor_phone": "55",
+          "contractor_email": "contractor@example.com",
+          "contractor_address": "Contractor Address",
+          "salesman_id": 7,
+          "notes": "First quotation",
+          "terms_conditions": "Payment within 30 days",
+          "items": [
+              {
+                  "product_id": 1,
+                  "quantity": 22,
+                  "rate": 280
+              }
+          ]
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

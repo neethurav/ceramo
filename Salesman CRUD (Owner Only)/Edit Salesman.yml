@@ -5,36 +5,27 @@ info:
 
 http:
   method: PUT
-  url: http://127.0.0.1:8000/api/salesmen/7
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesmen/update
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
   body:
     type: json
-    data: "{\r
-
-      \    \"name\": \"Madhavv Sharma\",\r
-
-      \    \"email\": \"MadhavV@ceramo.com\",\r
-
-      \    \"password\": \"password123\",\r
-
-      \    \"designation\": \"Senior Sales Executive\",\r
-
-      \    \"mobile\": \"9999943215\",\r
-
-      \    \"salary\": 35000,\r
-
-      \    \"joining_date\": \"2026-07-25\",\r
-
-      \    \"is_active\": true\r
-
-      }"
-  auth:
-    type: bearer
-    token: "{{auth_secret_08wg}}"
+    data: |-
+      {"id":"9" ,
+          "name": "Madhavv Sharma",
+          "email": "Madhav@ceramo.com",
+          "password": "password123",
+          "designation_id": "2",
+          "mobile": "9999043215",
+          "salary": 35000,
+          "joining_date": "2026-07-25",
+          "is_active": true
+      }
 
 settings:
   encodeUrl: true

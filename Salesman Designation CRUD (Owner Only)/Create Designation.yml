@@ -1,0 +1,33 @@
+info:
+  name: Create Designation
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-designations
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer cOxZYmx22ufZvByWVhyGV9tIVXGZThbaB66YpSka3fdb7cf5
+  body:
+    type: json
+    data: |-
+      
+      {
+          "name": "Senior Sales Exexutive",
+          "code": "SSE",
+          "description": "Senior level sales manager with 5+ years experience",
+          "base_salary_min": 50000,
+          "base_salary_max": 80000,
+          "is_active": true
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

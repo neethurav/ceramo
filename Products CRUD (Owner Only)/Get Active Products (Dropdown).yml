@@ -5,18 +5,17 @@ info:
 
 http:
   method: GET
-  url: http://127.0.0.1:8000/api/products/active
+  url: https://neethu.astradevelops.in/ceramo/public/api/products/active
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
   body:
     type: json
     data: ""
-  auth:
-    type: bearer
-    token: "{{auth_secret_08wg}}"
 
 settings:
   encodeUrl: true

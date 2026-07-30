@@ -5,12 +5,14 @@ info:
 
 http:
   method: POST
-  url: http://127.0.0.1:8000/api/units
+  url: https://neethu.astradevelops.in/ceramo/public/api/units
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
   body:
     type: json
     data: "{\r
@@ -22,9 +24,6 @@ http:
       \    \"is_active\": \"1\"\r
 
       }"
-  auth:
-    type: bearer
-    token: "{{auth_secret_08wg}}"
 
 settings:
   encodeUrl: true

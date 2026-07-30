@@ -1,0 +1,31 @@
+info:
+  name: Create Field Staff
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/field-staff
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
+  body:
+    type: json
+    data: |-
+      {
+          "name": "Rajesh Kumar",
+          "email": "rajesh.kumar@fieldstaff.com",
+          "mobile": "9876543210",
+          "address": "123, Field Staff Colony, Mumbai - 400001",
+          "joining_date": "2026-07-29"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -5,40 +5,29 @@ info:
 
 http:
   method: POST
-  url: http://127.0.0.1:8000/api/products
+  url: https://neethu.astradevelops.in/ceramo/public/api/products
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
   body:
     type: json
-    data: "{\r
-
-      \    \"name\": \"Marvel Statuario\",\r
-
-      \    \"company_id\": 1,\r
-
-      \    \"size\": \"600x1200\",\r
-
-      \    \"unit_id\": 1,\r
-
-      \    \"rate\": 60,\r
-
-      \    \"incentive_amount\": 5,\r
-
-      \    \"incentive_unit\": \"per_sqft\",\r
-
-      \    \"bonus_type\": \"single\",\r
-
-      \    \"min_quantity\": 0,\r
-
-      \    \"is_active\": true\r
-
-      }"
-  auth:
-    type: bearer
-    token: "{{auth_secret_08wg}}"
+    data: |-
+      {
+          "name": "  qdveluario",
+          "company_id": 1,
+          "size": "600x1200",
+          "unit_id": 2,
+          "rate": 50,
+          "incentive_percentage": 5,
+          "incentive_unit": "per_sqft",
+          "bonus_type": "bulk",
+          "min_quantity": 0,
+          "is_active": true
+      }
 
 settings:
   encodeUrl: true

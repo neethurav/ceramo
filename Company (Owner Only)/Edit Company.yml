@@ -5,26 +5,22 @@ info:
 
 http:
   method: PUT
-  url: http://127.0.0.1:8000/api/companies/1
+  url: https://neethu.astradevelops.in/ceramo/public/api/companies/update
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
   body:
     type: json
-    data: "{\r
-
-      \    \"name\": \"Somany Ceramics\",\r
-
-      \    \"code\": \"SOM\",\r
-
-      \    \"website\": \"\"\r
-
-      }"
-  auth:
-    type: bearer
-    token: "{{auth_secret_08wg}}"
+    data: |-
+      {"id": 1,
+          "name": "Somany Ceramics",
+          "code": "SOM",
+          "website": ""
+      }
 
 settings:
   encodeUrl: true

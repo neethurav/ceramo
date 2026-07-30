@@ -5,18 +5,20 @@ info:
 
 http:
   method: DELETE
-  url: http://127.0.0.1:8000/api/salesmen/7
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesmen/delete
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
+    - name: Authorization
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
   body:
     type: json
-    data: ""
-  auth:
-    type: bearer
-    token: "{{auth_secret_08wg}}"
+    data: |-
+      {
+          "id": 1
+      }
 
 settings:
   encodeUrl: true
