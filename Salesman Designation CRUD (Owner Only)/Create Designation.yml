@@ -12,18 +12,34 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer cOxZYmx22ufZvByWVhyGV9tIVXGZThbaB66YpSka3fdb7cf5
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
   body:
     type: json
     data: |-
       
       {
-          "name": "Senior Sales Exexutive",
-          "code": "SSE",
-          "description": "Senior level sales manager with 5+ years experience",
-          "base_salary_min": 50000,
-          "base_salary_max": 80000,
-          "is_active": true
+          "designations": [
+              {
+                  "name": "Senior Sales Executive",
+                  
+              },
+              {
+                  "name": "Junior Sales Executive",
+                  
+              },
+              {
+                  "name": "Sales Manager",
+                 
+              },
+              {
+                  "name": "Area Sales Manager",
+                  
+              },
+              {
+                  "name": "Sales Executive",
+                 
+              }
+          ]
       }
 
 settings:

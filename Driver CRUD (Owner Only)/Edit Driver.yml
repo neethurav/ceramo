@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
   body:
     type: json
     data: |-
@@ -20,7 +20,6 @@ http:
       {"id": 1,
           "name": "Dri1",
           "email": "dri1@ceramo.com",
-          "password": "password123",
           "mobile": "9876543210",
           "license_number": "DL000001",
           "vehicle_number": "KA-01-AB-1234",

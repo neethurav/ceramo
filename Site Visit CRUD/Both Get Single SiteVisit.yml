@@ -1,21 +1,24 @@
 info:
-  name: Get Active Companies (Dropdown)
+  name: Both Get Single SiteVisit
   type: http
-  seq: 4
+  seq: 5
 
 http:
-  method: GET
-  url: https://neethu.astradevelops.in/ceramo/public/api/companies/active
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/site-visits/show
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 75|oPXnV7wplFkKBgUu1SgXZ3ApLOehRbCew3n8PiNh0db71ae7
   body:
     type: json
-    data: ""
+    data: |-
+      {
+          "id": 1
+      }
 
 settings:
   encodeUrl: true

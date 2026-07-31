@@ -1,0 +1,36 @@
+info:
+  name: Create Sitevisit
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/site-visits
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: multipart/form-data
+    - name: Authorization
+      value: Bearer 74|TcHjz8Ev6VnFtH1IrjWcvvQQoEqPI8l0fHZb3ttF0b25d9c8
+  body:
+    type: json
+    data: |-
+      {
+          "customer_name": "John Doe",
+          "customer_phone": "9876543210",
+          "customer_email": "john@example.com",
+          "site_address": "123 Main Street, City, State - 123456",
+          "area_sqft": 1500.50,
+          "project_type": "residential",
+          "estimated_budget": 50000.00,
+          "preferred_products": "Ceramic tiles, Marble flooring, Wall tiles",
+          "visit_date": "2026-07-30",
+          "notes": "Customer is interested in premium quality products"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

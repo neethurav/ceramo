@@ -1,18 +1,19 @@
 info:
-  name: Get active drivers(dropdown)
+  name: Get Pending SiteVisits ( Dropdown)
   type: http
-  seq: 2
+  seq: 7
 
 http:
   method: GET
-  url: https://neethu.astradevelops.in/ceramo/public/api/drivers/active
+  url: https://neethu.astradevelops.in/ceramo/public/api/site-visits/pending-dropdown
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 75|oPXnV7wplFkKBgUu1SgXZ3ApLOehRbCew3n8PiNh0db71ae7
+  auth: inherit
 
 settings:
   encodeUrl: true

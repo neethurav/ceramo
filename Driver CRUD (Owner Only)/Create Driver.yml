@@ -12,17 +12,17 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
+      value: Bearer 85|frnm3BXrQM6FBM5nipkTEhAOqEuorecdMxHfDCNe7da37760
   body:
     type: json
     data: |-
       
       {
-          "name": "Dri ver",
-          "email": "dr@ceramo.com",
-          "mobile": "9876432012",
-          "license_number": "AJ1234562789",
-          "vehicle_number": "KAA-01-AB-1234",
+          "name": "Driver2",
+          "email": "rasnaravi869@gmail.com",
+          "mobile": "9556044012",
+          "license_number": "A6ff562789",
+          "vehicle_number": "KAe-02-AB-1234",
           "joining_date": "2026-07-25"
       }
 
