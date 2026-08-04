@@ -1,0 +1,28 @@
+info:
+  name: Owner Get Salesman Incentive Summary
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-incentives/summary
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+  body:
+    type: json
+    data: |-
+      {
+          "year": 2026,
+          "month": 8
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

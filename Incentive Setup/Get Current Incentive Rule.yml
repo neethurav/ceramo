@@ -1,18 +1,18 @@
 info:
-  name: Salesman List Own Estimates
+  name: Get Current Incentive Rule
   type: http
   seq: 1
 
 http:
   method: GET
-  url: https://neethu.astradevelops.in/ceramo/public/api/estimates/my
+  url: https://neethu.astradevelops.in/ceramo/public/api/incentive-rules/current
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
   body:
     type: json
     data: ""

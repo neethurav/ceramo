@@ -12,14 +12,14 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 278|ctg9b3iGrRRyxKVz1KcWEEzRyqvMtXWcpeGIY70I9fef08d7
   body:
     type: json
     data: |-
       {
           "name": "John",
           "mobile": "9876543219", //no phone in owners
-          "email": "john@ceramo.com" //no email in drivers
+          "email": "owner@ceramo.com" //no email in drivers
       }
 
 settings:

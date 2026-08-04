@@ -12,19 +12,18 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 278|ctg9b3iGrRRyxKVz1KcWEEzRyqvMtXWcpeGIY70I9fef08d7
   body:
     type: json
     data: |-
-      {"id":"9" ,
+      {"id":"11" ,
           "name": "Madhavv Sharma",
           "email": "Madhav@ceramo.com",
           "password": "password123",
-          "designation_id": "2",
+          "designation_id": "6",
           "mobile": "9999043215",
           "salary": 35000,
-          "joining_date": "2026-07-25",
-          "is_active": true
+          "joining_date": "2026-07-25"
       }
 
 settings:

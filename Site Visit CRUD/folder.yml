@@ -1,7 +1,7 @@
 info:
   name: "Site Visit CRUD "
   type: folder
-  seq: 12
+  seq: 9
 
 request:
   auth: inherit

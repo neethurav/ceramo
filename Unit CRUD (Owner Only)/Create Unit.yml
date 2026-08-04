@@ -12,18 +12,14 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 137|PzPKN1iGJJXQC05sXorPiiGyOVwcjYta3NYeaI9945f601b2
   body:
     type: json
-    data: "{\r
-
-      \    \"name\": \"Square Feet\",\r
-
-      \    \"abbreviation\": \"SqFt\",\r
-
-      \    \"is_active\": \"1\"\r
-
-      }"
+    data: |-
+      {
+          "name": "Square Feet",
+          "abbreviation": "SqFt"
+      }
 
 settings:
   encodeUrl: true

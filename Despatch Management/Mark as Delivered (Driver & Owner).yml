@@ -1,0 +1,29 @@
+info:
+  name: Mark as Delivered (Driver & Owner)
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/despatches/mark-delivered
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+  body:
+    type: json
+    data: |-
+      {
+          "id": 1,
+          "customer_signature": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA...",
+          "driver_signature": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..."
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

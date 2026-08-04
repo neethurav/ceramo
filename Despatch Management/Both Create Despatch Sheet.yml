@@ -1,0 +1,50 @@
+info:
+  name: Both Create Despatch Sheet
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/despatches/
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+  body:
+    type: json
+    data: |2-
+       {
+                "estimate_id": 5,
+                "ref_no": "REF-2026-001",
+                "party_name": "Rajesh Builders",
+                "contact_number": "9876543210",
+                "delivery_address": "123 Main Street, Mumbai - 400001",
+                "driver_id": 7,
+                "driver_name": "Driver Name",
+                "vehicle_number": "KA01AB1234",
+                "items": [
+                    {
+                        "estimate_item_id": 1,
+                        "boxes": 10,
+                        "pieces": 0,
+                        "quantity": 1200
+                    },
+                    {
+                        "estimate_item_id": 2,
+                        "boxes": 5,
+                        "pieces": 0,
+                        "quantity": 600
+                    }
+                ],
+                "despatch_date": "2026-08-01",
+                "delivery_notes": "Handle with care"
+            }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -12,16 +12,10 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
+      value: Bearer 272|Ivi4JCak1h3NziybfmD9qNl2ahfXrt8HjjqhJVpyb43a9d17
   body:
     type: json
-    data: "{\r
-
-      \    \"email\": \"salesman1@ceramo.com\",\r
-
-      \    \"password\": \"password123\"\r
-
-      }"
+    data: ""
 
 settings:
   encodeUrl: true

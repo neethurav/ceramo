@@ -1,7 +1,7 @@
 info:
   name: QuotationApproval Management
   type: folder
-  seq: 10
+  seq: 11
 
 request:
   auth: inherit

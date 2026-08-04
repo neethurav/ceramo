@@ -1,0 +1,27 @@
+info:
+  name: Both View Single Despatch Sheet
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/despatches/show
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+  body:
+    type: json
+    data: |-
+      {
+          "id": 1
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

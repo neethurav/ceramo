@@ -12,21 +12,21 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 183|gpFEUKmV9oaxv1GlqiwEMm0OVVjZDlSjHKyFb9a0e07d9693
   body:
     type: json
     data: |-
       {
-          "name": "  qdveluario",
-          "company_id": 1,
+          "name": "qdveluario",
+          "company_id": 8,
           "size": "600x1200",
-          "unit_id": 2,
+          "unit_id": 8,
           "rate": 50,
           "incentive_percentage": 5,
           "incentive_unit": "per_sqft",
           "bonus_type": "bulk",
-          "min_quantity": 0,
-          "is_active": true
+          "min_quantity": 0
+       
       }
 
 settings:

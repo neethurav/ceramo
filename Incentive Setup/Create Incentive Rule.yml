@@ -1,0 +1,33 @@
+info:
+  name: Create Incentive Rule
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/incentive-rules/
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+  body:
+    type: json
+    data: |-
+      {
+          "name": "August 2026 Bonus",
+          "year": 2026,
+          "month": 8,
+          "type": "percentage",
+          "value": 5,
+          "max_amount": 5000,
+          "is_active": true
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

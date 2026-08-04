@@ -15,7 +15,7 @@ http:
       value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
   body:
     type: json
-    data: '{"id":1}'
+    data: '{"id":12}'
 
 settings:
   encodeUrl: true

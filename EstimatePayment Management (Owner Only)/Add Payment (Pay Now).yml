@@ -1,0 +1,35 @@
+info:
+  name: " Add Payment (Pay Now) "
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/payments
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+  body:
+    type: json
+    data: |-
+      {
+          // ===== REQUIRED =====
+          "estimate_id": 5,                     // ✅ REQUIRED
+          "amount": 5000.00,                    // ✅ REQUIRED, cannot exceed available balance
+          "payment_date": "2026-08-20",         // ✅ REQUIRED
+          
+          // ===== OPTIONAL =====
+          "payment_method": "cash",             // Values: cash, cheque, online, credit, bank_transfer (Default: cash)
+          "payment_reference": "Cash payment",
+          "notes": "Third payment"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,30 @@
+info:
+  name: Owner Mark Paid
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-incentives/mark-paid
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+  body:
+    type: json
+    data: |-
+      {
+          "id": 5,
+          "payment_reference": "REF-2026-08-001",
+          "payment_date": "2026-08-03",
+          "notes": "Incentive payment for August 2026"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

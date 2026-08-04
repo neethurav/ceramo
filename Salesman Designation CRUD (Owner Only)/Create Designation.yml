@@ -16,7 +16,6 @@ http:
   body:
     type: json
     data: |-
-      
       {
           "designations": [
               {

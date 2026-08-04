@@ -16,9 +16,22 @@ http:
   body:
     type: json
     data: |-
-      { "id": 1,
-          "handling_charge": 3000.00,
-          "approval_notes": "Approved with 5% handling charge"
+      {     //Required only id,others optional
+          "id": 5,
+          "handling_charge": 500.00,
+          "approval_notes": "Approved by owner",
+          
+          // Discount
+          "discount_type": "percentage",
+          "discount_value": 10,
+          "discount_notes": "10% bulk discount",
+          
+          // Initial Payment
+          "payment_amount": 30000.00,
+          "payment_method": "online",
+          "payment_reference": "TXN123456",
+          "payment_date": "2026-07-30",
+          "payment_notes": "Advance payment"
       }
 
 settings:

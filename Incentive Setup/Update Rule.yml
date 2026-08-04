@@ -1,0 +1,32 @@
+info:
+  name: Update Rule
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/incentive-rules/update
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+  body:
+    type: json
+    data: |-
+      {
+          "id": 1,
+          "name": "August 2026 Bonus Updated",
+          "type": "percentage",
+          "value": 10,
+          "max_amount": 10000,
+          "is_active": true
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
