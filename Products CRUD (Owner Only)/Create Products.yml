@@ -21,12 +21,13 @@ http:
           "company_id": 8,
           "size": "600x1200",
           "unit_id": 8,
+       "mrp": 650,  
           "rate": 50,
+          "incentive_type": "percentage",
           "incentive_percentage": 5,
           "incentive_unit": "per_sqft",
           "bonus_type": "bulk",
           "min_quantity": 0
-       
       }
 
 settings:

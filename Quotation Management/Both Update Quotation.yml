@@ -4,7 +4,7 @@ info:
   seq: 8
 
 http:
-  method: POST
+  method: PUT
   url: https://neethu.astradevelops.in/ceramo/public/api/quotations/update
   headers:
     - name: Accept

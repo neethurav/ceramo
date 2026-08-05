@@ -15,31 +15,11 @@ http:
       value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
   body:
     type: json
-    data: |-
-      {
-          "designations": [
-              {
+    data: |2-
+       {
                   "name": "Senior Sales Executive",
                   
-              },
-              {
-                  "name": "Junior Sales Executive",
-                  
-              },
-              {
-                  "name": "Sales Manager",
-                 
-              },
-              {
-                  "name": "Area Sales Manager",
-                  
-              },
-              {
-                  "name": "Sales Executive",
-                 
               }
-          ]
-      }
 
 settings:
   encodeUrl: true
