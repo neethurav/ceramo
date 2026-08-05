@@ -1,7 +1,7 @@
 info:
   name: Update Profile
   type: http
-  seq: 3
+  seq: 2
 
 http:
   method: PUT
@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 278|ctg9b3iGrRRyxKVz1KcWEEzRyqvMtXWcpeGIY70I9fef08d7
+      value: Bearer 322|R1R7WPdE0xXSArcNTm1Iru9V1bi6itOeXBbYa0sof251c965
   body:
     type: json
     data: |-

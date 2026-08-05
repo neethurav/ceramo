@@ -12,21 +12,21 @@ http:
     - name: Accept
       value: application/json
     - name: Authorization
-      value: Bearer 74|TcHjz8Ev6VnFtH1IrjWcvvQQoEqPI8l0fHZb3ttF0b25d9c8
+      value: Bearer 300|u0GC7AF389V6KjcHJZ5mjAov7gw1TqbJaGFb3uKA9a279179
   body:
     type: json
     data: |-
       {
-          "id": 1,
+          "id": 6,
           "customer_name": "Jane Doe",
           "customer_phone": "9876543211",
           "customer_email": "jane@example.com",
           "site_address": "456 Park Avenue, City, State - 123456",
-          "area_sqft": 2000.00,
-          "project_type": "commercial",
-          "estimated_budget": 75000.00,
-          "preferred_products": "Vitrified tiles, Granite",
-          "visit_date": "2026-07-30",
+         // "area_sqft": 2000.00,
+        //  "project_type": "commercial",
+         // "estimated_budget": 75000.00,
+          //"preferred_products": "Vitrified tiles, Granite",
+          "visit_date": "2026-08-04",
           "notes": "Updated notes after second visit",
          "remove_image_ids": [1],
           "images": [

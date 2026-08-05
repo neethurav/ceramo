@@ -12,16 +12,16 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 183|gpFEUKmV9oaxv1GlqiwEMm0OVVjZDlSjHKyFb9a0e07d9693
+      value: Bearer 322|R1R7WPdE0xXSArcNTm1Iru9V1bi6itOeXBbYa0sof251c965
   body:
     type: json
     data: |-
       {
           "name": "Neee",
-          "email": "workwithnithuz@gmail.com",
+          "email": "worrkkwithnithuz@gmail.com",
           "designation_id": "6",
-          "mobile": "9224719292",
-          "salary": 35000,
+          "mobile": "5424719292",
+          "salary": "35000",
           "joining_date": "2026-07-25"
 
       }

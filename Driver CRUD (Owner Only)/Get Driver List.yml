@@ -1,21 +1,18 @@
 info:
-  name: Get Active Companies (Dropdown)
+  name: Get Driver List
   type: http
-  seq: 4
+  seq: 6
 
 http:
   method: GET
-  url: https://neethu.astradevelops.in/ceramo/public/api/companies/active
+  url: https://neethu.astradevelops.in/ceramo/public/api/drivers
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
-  body:
-    type: json
-    data: ""
+      value: Bearer 325|JGoEnwbKbt2OE3zqdWcTLIFnIkMAJ8DZqlTyVKUD071f0cba
 
 settings:
   encodeUrl: true

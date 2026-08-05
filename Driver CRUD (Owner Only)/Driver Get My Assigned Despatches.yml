@@ -1,7 +1,7 @@
 info:
   name: Driver Get My Assigned Despatches
   type: http
-  seq: 6
+  seq: 5
 
 http:
   method: GET
@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 322|R1R7WPdE0xXSArcNTm1Iru9V1bi6itOeXBbYa0sof251c965
   body:
     type: json
     data: ""

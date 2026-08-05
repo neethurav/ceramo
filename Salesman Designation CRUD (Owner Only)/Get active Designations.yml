@@ -1,21 +1,18 @@
 info:
-  name: Logout
+  name: "Get active Designations "
   type: http
   seq: 2
 
 http:
-  method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/logout
+  method: GET
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-designations/active
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 272|Ivi4JCak1h3NziybfmD9qNl2ahfXrt8HjjqhJVpyb43a9d17
-  body:
-    type: json
-    data: ""
+      value: Bearer 322|R1R7WPdE0xXSArcNTm1Iru9V1bi6itOeXBbYa0sof251c965
 
 settings:
   encodeUrl: true

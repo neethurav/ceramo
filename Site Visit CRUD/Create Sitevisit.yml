@@ -10,9 +10,9 @@ http:
     - name: Accept
       value: application/json
     - name: Content-Type
-      value: multipart/form-data
+      value: application/json
     - name: Authorization
-      value: Bearer 183|gpFEUKmV9oaxv1GlqiwEMm0OVVjZDlSjHKyFb9a0e07d9693
+      value: Bearer 300|u0GC7AF389V6KjcHJZ5mjAov7gw1TqbJaGFb3uKA9a279179
   body:
     type: json
     data: |-
@@ -21,10 +21,10 @@ http:
           "customer_phone": "9876543210",
           "customer_email": "john@example.com",
           "site_address": "123 Main Street, City, State - 123456",
-          "area_sqft": 1500.50,
-          "project_type": "residential",
-          "estimated_budget": 50000.00,
-          "preferred_products": "Ceramic tiles, Marble flooring, Wall tiles",
+         // "area_sqft": 1500.50,
+        //  "project_type": "residential",
+         // "estimated_budget": 50000.00,
+          //"preferred_products": "Ceramic tiles, Marble flooring, Wall tiles",
           "visit_date": "2026-07-30",
           "notes": "Customer is interested in premium quality products"
       }
