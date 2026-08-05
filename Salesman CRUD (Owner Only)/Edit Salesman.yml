@@ -23,7 +23,8 @@ http:
           "designation_id": "6",
           "mobile": "9999043215",
           "salary": "35000",
-          "joining_date": "2026-07-25"
+          "joining_date": "2026-07-25",
+       "is_active":1
       }
 
 settings:

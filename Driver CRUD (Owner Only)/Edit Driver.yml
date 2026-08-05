@@ -23,7 +23,8 @@ http:
           "mobile": "9871143210",
           "license_number": "Dq000001",
           "vehicle_number": "Kq-01-AB-1234",
-          "joining_date": "2026-07-25"
+          "joining_date": "2026-07-25",
+       "is_active":1
       }
 
 settings:
