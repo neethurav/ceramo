@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/drivers
+  url: https://neethu.astradevelops.in/ceramo/public/api/drivers/create
   headers:
     - name: Accept
       value: application/json

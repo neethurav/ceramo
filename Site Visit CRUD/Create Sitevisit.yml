@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/site-visits
+  url: https://neethu.astradevelops.in/ceramo/public/api/site-visits/create
   headers:
     - name: Accept
       value: application/json

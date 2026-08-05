@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-designations
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-designations/create
   headers:
     - name: Accept
       value: application/json
@@ -17,7 +17,7 @@ http:
     type: json
     data: |2-
        {
-                  "name": "Senior Sales Executive",
+                  "name": "Senior Sales Executive"
                   
               }
 
