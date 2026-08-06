@@ -1,18 +1,18 @@
 info:
-  name: Salesman List
+  name: Both List Own Estimates
   type: http
-  seq: 4
+  seq: 1
 
 http:
   method: GET
-  url: https://neethu.astradevelops.in/ceramo/public/api/salesmen
+  url: https://neethu.astradevelops.in/ceramo/public/api/estimates/my
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 363|G1sK68ft2blJlbOoCmRDjOGmwdooqH2Q1Rhfyrde7f26cb77
+      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
   body:
     type: json
     data: ""

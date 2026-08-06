@@ -1,7 +1,7 @@
 info:
-  name: FieldStaff Incentives
+  name: Dashboard
   type: folder
-  seq: 18
+  seq: 10
 
 request:
   auth: inherit

@@ -23,10 +23,10 @@ http:
           "unit_id": 1,
        "mrp": 650,  
           "rate": 60,
-      "incentive_type": "percentage",
-          "incentive_percentage": 5,
-          "incentive_unit": "per_sqft",
-          "bonus_type": "single",
+       "incentive_type": "percentage", //percentage or fixed
+         "incentive_amount": "20", //if fixed, this field should appear
+          "incentive_percentage": 5, //if percentage, this field should appear
+         "bonus_type": "bulk", //bulk or single
           "min_quantity": 0,
        "is_active":1
       }

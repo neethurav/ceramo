@@ -1,7 +1,7 @@
 info:
   name: EstimatePayment Management (Owner Only)
   type: folder
-  seq: 13
+  seq: 14
 
 request:
   auth: inherit
