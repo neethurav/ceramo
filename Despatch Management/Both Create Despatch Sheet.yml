@@ -1,18 +1,18 @@
 info:
   name: Both Create Despatch Sheet
   type: http
-  seq: 4
+  seq: 3
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/despatches/
+  url: https://neethu.astradevelops.in/ceramo/public/api/despatches/create
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 434|9D4uvAtxvBsmlxduEcHTGDy4V3QP4WL66lyY8JVCc2d7366a
   body:
     type: json
     data: |2-
@@ -27,7 +27,7 @@ http:
                 "vehicle_number": "KA01AB1234",
                 "items": [
                     {
-                        "estimate_item_id": 1,
+                        "estimate_item_id": "11",
                         "boxes": 10,
                         "pieces": 0,
                         "quantity": 1200

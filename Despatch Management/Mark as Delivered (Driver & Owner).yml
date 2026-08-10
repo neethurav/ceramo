@@ -1,7 +1,7 @@
 info:
   name: Mark as Delivered (Driver & Owner)
   type: http
-  seq: 6
+  seq: 5
 
 http:
   method: POST

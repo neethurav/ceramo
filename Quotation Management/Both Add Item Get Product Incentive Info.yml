@@ -1,23 +1,25 @@
 info:
-  name: Both View Single Despatch Sheet
+  name: Both Add Item Get Product Incentive Info
   type: http
-  seq: 2
+  seq: 7
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/despatches/show
+  url: https://neethu.astradevelops.in/ceramo/public/api/quotations/product-incentive
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 434|9D4uvAtxvBsmlxduEcHTGDy4V3QP4WL66lyY8JVCc2d7366a
+      value: Bearer 403|voPJJskoJGdTF7Zl4FW8n8Yx9v1f522jz0rkW58Da0a8ce3a
   body:
     type: json
     data: |-
       {
-          "id": "5"
+          "product_id": "12",
+          "quantity": "100",
+          "rate": "500"
       }
 
 settings:

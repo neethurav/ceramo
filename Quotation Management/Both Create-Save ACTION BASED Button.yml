@@ -1,5 +1,5 @@
 info:
-  name: Both Create/Save Quotation (Draft) Button
+  name: Both Create/Save ACTION BASED Button
   type: http
   seq: 6
 
@@ -16,7 +16,7 @@ http:
   body:
     type: json
     data: |-
-      {
+      {"action": "save_quotation",
           "date": "2026-08-06",
           "customer_name": "ABC Builders",
           "customer_phone": "9876543210",
