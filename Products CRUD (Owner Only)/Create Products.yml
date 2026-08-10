@@ -12,23 +12,22 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 183|gpFEUKmV9oaxv1GlqiwEMm0OVVjZDlSjHKyFb9a0e07d9693
+      value: Bearer 375|2GvsVZrA5OuExu40mlnV9SeTvRE45FbocwjsCdBX0d53378a
   body:
     type: json
     data: |-
       {
-          "name": "qdveluario",
-          "company_id": 8,
+          "name": "mqqqario",
+          "company_id":"8",
           "size": "600x1200",
-          "unit_id": 8,
-       "mrp": 650,  
-          "rate": 50,
-          "incentive_type": "percentage", //percentage or fixed
-      "incentive_amount": "20", //if fixed, this field should appear
-          "incentive_percentage": 5, //if percentage, this field should appear
-        
-          "bonus_type": "bulk", //bulk or single
-          "min_quantity": 0
+          "unit_id": "8",
+          "mrp": "550",  
+          "rate": "450",
+          "incentive_type": "fixed", //percentage or fixed
+         "incentive_amount": "50", //if fixed, this field should appear
+        //  "incentive_percentage": 5, //if percentage, this field should appear
+         "bonus_type": "bulk", //bulk or single
+          "min_quantity": "0"
       }
 
 settings:

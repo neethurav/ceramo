@@ -22,7 +22,7 @@ http:
           "customer_email": "john@example.com",
           "site_address": "123 Main Street, City, State - 123456",
          // "area_sqft": 1500.50,
-          "project_type": "residential",
+         // "project_type": "residential",
          // "estimated_budget": 50000.00,
           //"preferred_products": "Ceramic tiles, Marble flooring, Wall tiles",
           "visit_date": "2026-07-30",

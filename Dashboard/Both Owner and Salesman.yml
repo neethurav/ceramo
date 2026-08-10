@@ -1,18 +1,18 @@
 info:
-  name: Both List Own Draft and Sent Quotations
+  name: "Both Owner and Salesman "
   type: http
   seq: 1
 
 http:
   method: GET
-  url: https://neethu.astradevelops.in/ceramo/public/api/quotations/my
+  url: https://neethu.astradevelops.in/ceramo/public/api/dashboard
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 183|gpFEUKmV9oaxv1GlqiwEMm0OVVjZDlSjHKyFb9a0e07d9693
+      value: Bearer 380|QzwxvR6snc6jKotlJm5Cf6AETmWfX2CGuCtpOzydc8cf676b
   body:
     type: json
     data: ""

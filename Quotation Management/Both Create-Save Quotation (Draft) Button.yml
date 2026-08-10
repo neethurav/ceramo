@@ -1,103 +1,47 @@
 info:
   name: Both Create/Save Quotation (Draft) Button
   type: http
-  seq: 7
+  seq: 6
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/quotations
+  url: https://neethu.astradevelops.in/ceramo/public/api/quotations/create
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 137|PzPKN1iGJJXQC05sXorPiiGyOVwcjYta3NYeaI9945f601b2
+      value: Bearer 403|voPJJskoJGdTF7Zl4FW8n8Yx9v1f522jz0rkW58Da0a8ce3a
   body:
     type: json
     data: |-
       {
-        // ==========================================
-        // REQUIRED FIELDS
-        // ==========================================
-        
-        "date": "2026-07-30",                    // Date of quotation/estimate
-        "customer_name": "Rajesh Builders",      // Customer full name
-        "customer_phone": "9876543210",          // Customer 10-digit phone number
-        "items": [                               // At least 1 item required
-          {
-            "product_id": 12,                     // Product ID from products table
-            "quantity": 100,                     // Quantity (minimum 0.01)
-            "rate": 500.00                       // Rate per unit
-          }
-        ],
-        
-        // ==========================================
-        // OPTIONAL FIELDS - Customer Details
-        // ==========================================
-        
-        "customer_email": "rajesh@builders.com", // Customer email address
-        "customer_address": "123 Main Street, City", // Customer address
-        
-        // ==========================================
-        // OPTIONAL FIELDS - Contractor Details
-        // ==========================================
-        
-        "contractor_name": "ABC Constructions",  // Contractor name
-        "contractor_phone": "9876543211",        // Contractor phone
-        "contractor_email": "abc@constructions.com", // Contractor email
-        "contractor_address": "456 Contractor Road", // Contractor address
-        
-        // ==========================================
-        // OPTIONAL FIELDS - General
-        // ==========================================
-        
-        "notes": "Customer enquiry for new project", // Additional notes
-        "terms_conditions": "Standard terms apply", // Terms and conditions
-        "handling_charge": 500.00,               // Handling/Shipping charges
-        
-        // ==========================================
-        // SITE VISIT INTEGRATION
-        // ==========================================
-        
-        "site_visit_id": 1,                      // Link to existing pending site visit
-        // How site_visit_id works:
-        // 1. If site_visit_id provided → Uses that site visit data
-        // 2. If no site_visit_id but phone matches pending site visit → Auto-link
-        // 3. If no site_visit_id and no match → Manual customer entry
-        
-        // ==========================================
-        // SALESMAN ASSIGNMENT (Owner only)
-        // ==========================================
-        
-        "salesman_id": 10,                       // Assign estimate to specific salesman
-        
-        // ==========================================
-        // ⭐ DISCOUNT FIELDS (Optional)
-        // Only applicable when estimate is created as "approved"
-        // ==========================================
-        
-        "discount_type": "percentage",           // Values: "percentage" or "fixed"
-        "discount_value": 10,                    // For percentage: 10 = 10%, For fixed: 5000
-        "discount_notes": "10% bulk discount",   // Reason for discount
-        
-        // ==========================================
-        // ⭐ PAYMENT FIELDS (Optional)
-        // Only applicable when estimate is created as "approved"
-        // ==========================================
-        
-        "payment_amount": 30000.00,              // Amount received as payment
-        "payment_method": "online",              // Values: cash, cheque, online, credit, bank_transfer (Default: cash)
-        "payment_reference": "TXN123456",        // Cheque number, transaction ID, etc.
-        "payment_date": "2026-07-30",            // Date of payment (Default: today)
-        "payment_notes": "Advance payment"       // Payment notes
-        
-        // ==========================================
-        // ⚠️ NOTE: Discount & Payment fields are ONLY used when:
-        // 1. Estimate is being created directly as "approved"
-        // 2. Estimate is being approved during creation (NOT in separate approve endpoint)
-        // For separate approval, use POST /api/quotations/approve endpoint
-        // ==========================================
+          "date": "2026-08-06",
+          "customer_name": "ABC Builders",
+          "customer_phone": "9876543210",
+          "customer_email": "abc@builders.com",
+          "customer_address": "123 Main Street, City, State - 123456",
+          "contractor_name": "XYZ Constructions",
+          "contractor_phone": "9876543211",
+          "contractor_email": "xyz@constructions.com",
+          "contractor_address": "456 Contractor Road, City",
+          "site_visit_id": "13",
+          "handling_charge": 500,
+          "notes": "Customer enquiry for new project",
+          "terms_conditions": "Standard terms apply",
+          "items": [
+              {
+                  "product_id": 12,
+                  "quantity": 100,
+                  "rate": 500
+              },
+              {
+                  "product_id": 13,
+                  "quantity": 50,
+                  "rate": 750
+              }
+          ]
       }
 
 settings:

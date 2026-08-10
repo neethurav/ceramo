@@ -1,7 +1,7 @@
 info:
   name: "Both Update Quotation "
   type: http
-  seq: 8
+  seq: 5
 
 http:
   method: PUT
@@ -12,100 +12,25 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 403|voPJJskoJGdTF7Zl4FW8n8Yx9v1f522jz0rkW58Da0a8ce3a
   body:
     type: json
     data: |-
       {
-        // ==========================================
-        // REQUIRED FIELD
-        // ==========================================
-        
-        "id": 5,                                  // ✅ Required - Quotation ID
-        
-        // ==========================================
-        // ⚠️ IMPORTANT: Only send fields you want to update
-        // Fields not sent will keep their existing values
-        // ==========================================
-        
-        // ==========================================
-        // UPDATE CUSTOMER DETAILS
-        // ==========================================
-        
-        "customer_name": "Updated Name",          // Update customer name
-        "customer_phone": "9876543211",           // Will find/create/update customer by phone
-        "customer_address": "New Address",        // Update customer address
-        "customer_email": "new@email.com",        // Update customer email
-        
-        // ==========================================
-        // UPDATE GENERAL FIELDS
-        // ==========================================
-        
-        "date": "2026-07-31",                     // Update quotation date
-        "notes": "Updated notes",                 // Update notes
-        "terms_conditions": "Updated terms",      // Update terms & conditions
-        
-        // ==========================================
-        // UPDATE CONTRACTOR DETAILS
-        // ==========================================
-        
-        "contractor_name": "New Contractor",      // Update contractor name
-        "contractor_phone": "9876543222",         // Update contractor phone (will find/create/update)
-        "contractor_email": "new@contractor.com", // Update contractor email
-        "contractor_address": "New Contractor Address", // Update contractor address
-        
-        // ==========================================
-        // UPDATE ITEMS (Complete Replacement)
-        // ==========================================
-        
-        "items": [                                // Sending items will REPLACE all existing items
-          {
-            "product_id": 1,                      // Product ID from products table
-            "quantity": 200,                      // New quantity
-            "rate": 450.00                        // New rate
-          },
-          {
-            "product_id": 2,                      // Can add new items
-            "quantity": 100,
-            "rate": 600.00
-          }
-        ],
-        
-        // ==========================================
-        // UPDATE SITE VISIT
-        // ==========================================
-        
-        "site_visit_id": 2,                       // Change to different site visit
-        // OR
-        // "site_visit_id": null,                 // Remove site visit from estimate
-        // OR
-        // Don't send site_visit_id to keep existing
-        
-        // How site_visit_id changes work:
-        // 1. Change to different: Old reverts to pending, New becomes converted
-        // 2. Remove (null): Reverts to pending
-        // 3. Add (was null → now has ID): Converts from pending to converted
-        
-        // ==========================================
-        // UPDATE SALESMAN (Owner only)
-        // ==========================================
-        
-        "salesman_id": 15,                        // Reassign to different salesman
-        // OR
-        // "salesman_id": null,                   // Remove salesman assignment
-        
-        // ==========================================
-        // ⚠️ DISCOUNT & PAYMENT FIELDS
-        // CANNOT BE UPDATED HERE
-        // ==========================================
-        // Discount and payment fields are set during:
-        // 1. Direct approval (POST /api/quotations/approve)
-        // 2. Or via payment endpoints (POST /api/payments)
-        // 
-        // To update discount: Use POST /api/quotations/approve
-        // To add/update payment: Use POST /api/payments
-        // To delete payment: Use DELETE /api/payments/delete
-        // ==========================================
+          "id":"6",
+          "customer_name": "ABC Builders",
+          "customer_phone": "9876543210",
+          "contractor_name": "XYZ Constructions Updated",
+          "contractor_phone": "9876543211",
+          "contractor_email": "xyz.updated@constructions.com",
+          "contractor_address": "789 Contractor Road",
+          "items": [
+              {
+                  "product_id": 12,
+                  "quantity": 100,
+                  "rate": 500
+              }
+          ]
       }
 
 settings:

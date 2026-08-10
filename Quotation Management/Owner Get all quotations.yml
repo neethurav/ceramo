@@ -1,7 +1,7 @@
 info:
   name: Owner Get all quotations
   type: http
-  seq: 6
+  seq: 4
 
 http:
   method: GET
@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 183|gpFEUKmV9oaxv1GlqiwEMm0OVVjZDlSjHKyFb9a0e07d9693
+      value: Bearer 403|voPJJskoJGdTF7Zl4FW8n8Yx9v1f522jz0rkW58Da0a8ce3a
   params:
     - name: page
       value: "1"

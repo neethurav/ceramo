@@ -12,10 +12,10 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 6EeHlmXhVceuNRXNhBbQApmHBxYH2MTdquAc4wBF1f94cb39
+      value: Bearer 403|voPJJskoJGdTF7Zl4FW8n8Yx9v1f522jz0rkW58Da0a8ce3a
   body:
     type: json
-    data: '{"id":12}'
+    data: '{"id":"6"}'
 
 settings:
   encodeUrl: true
