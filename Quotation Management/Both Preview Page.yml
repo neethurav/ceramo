@@ -1,0 +1,82 @@
+info:
+  name: "Both Preview Page "
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/quotations/preview
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 403|voPJJskoJGdTF7Zl4FW8n8Yx9v1f522jz0rkW58Da0a8ce3a
+  body:
+    type: json
+    data: |-
+      {
+          // ==========================================
+          // REQUIRED FIELDS
+          // ==========================================
+          
+          "date": "2026-07-30",
+          "customer_name": "Rajesh Builders",
+          "customer_phone": "9876543210",
+          "items": [
+              {
+                  "product_id": 12,
+                  "quantity": 100,
+                  "rate": 500
+              }
+          ],
+          
+          // ==========================================
+          // OPTIONAL FIELDS - Customer Details
+          // ==========================================
+          
+          "customer_email": "rajesh@builders.com",
+          "customer_address": "123 Main Street, City",
+          
+          // ==========================================
+          // OPTIONAL FIELDS - Contractor Details
+          // ==========================================
+          
+          "contractor_name": "ABC Constructions",
+          "contractor_phone": "9876543211",
+          "contractor_email": "abc@constructions.com",
+          "contractor_address": "456 Contractor Road",
+          
+          // ==========================================
+          // OPTIONAL FIELDS - General
+          // ==========================================
+          
+          "notes": "Customer enquiry for new project",
+          "terms_conditions": "Standard terms apply",
+          "handling_charge": 500,
+          
+          // ==========================================
+          // OPTIONAL FIELDS - Discount
+          // ==========================================
+          
+          "discount_type": "percentage",      // "percentage" or "fixed"
+          "discount_value": 10,
+          "discount_notes": "Bulk discount",
+          
+          // ==========================================
+          // OPTIONAL FIELDS - Payment
+          // ==========================================
+          
+          "payment_amount": 30000,
+          "payment_method": "cash",           // cash, cheque, online, credit, bank_transfer
+          "payment_reference": "TXN123456",
+          "payment_date": "2026-07-30",
+          "payment_notes": "Advance payment"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

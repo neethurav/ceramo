@@ -1,11 +1,11 @@
 info:
-  name: Owner Get Salesman Incentive Summary
+  name: Both Get Incentive List
   type: http
-  seq: 3
+  seq: 1
 
 http:
-  method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-incentives/summary
+  method: GET
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-incentives?page=1&per_page=10
   headers:
     - name: Accept
       value: application/json
@@ -13,13 +13,16 @@ http:
       value: application/json
     - name: Authorization
       value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: per_page
+      value: "10"
+      type: query
   body:
     type: json
-    data: |-
-      {
-          "year": 2026,
-          "month": 8
-      }
+    data: ""
 
 settings:
   encodeUrl: true

@@ -1,11 +1,11 @@
 info:
-  name: Update Rule
+  name: Create OR Update setup for salesman
   type: http
-  seq: 4
+  seq: 1
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/incentive-rules/update
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-incentive-setup/save
   headers:
     - name: Accept
       value: application/json
@@ -17,12 +17,13 @@ http:
     type: json
     data: |-
       {
-          "id": 1,
-          "name": "August 2026 Bonus Updated",
-          "type": "percentage",
-          "value": 10,
-          "max_amount": 10000,
-          "is_active": true
+          "salesman_id": "1",
+          "year": "2026",
+          "month": "8",
+          "target_amount": "200000",
+          "bonus_type": "fixed", //fixed or percentage or none
+          "bonus_value": "5000",
+          "has_target": "true"
       }
 
 settings:

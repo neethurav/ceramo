@@ -1,11 +1,11 @@
 info:
-  name: Create Incentive Rule
+  name: Edit form (pre-fill) Get specific salesman's setup
   type: http
-  seq: 2
+  seq: 3
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/incentive-rules/
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-incentive-setup/get
   headers:
     - name: Accept
       value: application/json
@@ -17,13 +17,9 @@ http:
     type: json
     data: |-
       {
-          "name": "August 2026 Bonus",
-          "year": 2026,
-          "month": 8,
-          "type": "percentage",
-          "value": 5,
-          "max_amount": 5000,
-          "is_active": true
+          "salesman_id": "1",
+          "year": "2026",
+          "month": "8"
       }
 
 settings:
