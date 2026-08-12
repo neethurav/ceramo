@@ -53,11 +53,15 @@ http:
           {
             "product_id": 1,                      // Product ID from products table
             "quantity": 200,                      // New quantity
+      "box_quantity": 0,
+            "piece_quantity": 40,
             "rate": 450.00                        // New rate
           },
           {
             "product_id": 2,                      // Can add new items
             "quantity": 100,
+      "box_quantity": 0,
+            "piece_quantity": 40,
             "rate": 600.00
           }
         ],

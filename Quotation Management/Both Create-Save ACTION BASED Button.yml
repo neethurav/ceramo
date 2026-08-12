@@ -16,32 +16,43 @@ http:
   body:
     type: json
     data: |-
-      {"action": "save_quotation",
-          "date": "2026-08-06",
-          "customer_name": "ABC Builders",
-          "customer_phone": "9876543210",
-          "customer_email": "abc@builders.com",
-          "customer_address": "123 Main Street, City, State - 123456",
-          "contractor_name": "XYZ Constructions",
-          "contractor_phone": "9876543211",
-          "contractor_email": "xyz@constructions.com",
-          "contractor_address": "456 Contractor Road, City",
-          "site_visit_id": "13",
-          "handling_charge": 500,
-          "notes": "Customer enquiry for new project",
-          "terms_conditions": "Standard terms apply",
-          "items": [
-              {
-                  "product_id": 12,
-                  "quantity": 100,
-                  "rate": 500
-              },
-              {
-                  "product_id": 13,
-                  "quantity": 50,
-                  "rate": 750
-              }
-          ]
+      {
+        "action": "save_quotation",
+        "date": "2026-08-06",
+
+        "customer_name": "ABC Builders",
+        "customer_phone": "9876543210",
+        "customer_email": "abc@builders.com",
+        "customer_address": "123 Main Street, City, State - 123456",
+
+        "contractor_name": "XYZ Constructions",
+        "contractor_phone": "9876543211",
+        "contractor_email": "xyz@constructions.com",
+        "contractor_address": "456 Contractor Road, City",
+
+        "site_visit_id": 13,
+
+        "handling_charge": 500,
+
+        "notes": "Customer enquiry for new project",
+        "terms_conditions": "Standard terms apply",
+
+        "items": [
+          {
+            "product_id": 12,
+            "quantity": 2,
+            "box_quantity": 2,
+            "piece_quantity": 3,
+            "rate": 500
+          },
+          {
+            "product_id": 13,
+            "quantity": 40,
+            "box_quantity": 0,
+            "piece_quantity": 40,
+            "rate": 750
+          }
+        ]
       }
 
 settings:

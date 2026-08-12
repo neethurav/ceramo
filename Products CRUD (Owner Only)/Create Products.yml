@@ -21,6 +21,10 @@ http:
           "company_id":"8",
           "size": "600x1200",
           "unit_id": "8",
+       "pieces_per_box": "8", //only if boxes
+       "packing": "8pcs/box",
+
+       
           "mrp": "550",  
           "rate": "450",
           "incentive_type": "fixed", //percentage or fixed
