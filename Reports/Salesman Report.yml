@@ -1,11 +1,11 @@
 info:
-  name: Owner Get Field-staff Incentive Summary
+  name: Salesman Report
   type: http
-  seq: 2
+  seq: 4
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/field-staff-incentives/summary
+  url: https://neethu.astradevelops.in/ceramo/public/reports/salesman-performance
   headers:
     - name: Accept
       value: application/json
@@ -15,11 +15,12 @@ http:
       value: Bearer 538|G7ViYrdDjyG7FztgYpn53DysCf28m4JfWbOjTWX324317585
   body:
     type: json
-    data: |
+    data: |-
       {
-                "date_from": "2026-08-01",
-                "date_to": "2026-08-31"
-            }
+        "salesman_id": 10,
+        "from_date": "2026-08-01",
+        "to_date": "2026-08-31"
+      }
 
 settings:
   encodeUrl: true

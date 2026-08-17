@@ -1,7 +1,7 @@
 info:
   name: Owner Mark Paid
   type: http
-  seq: 3
+  seq: 4
 
 http:
   method: POST
@@ -12,11 +12,11 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 533|2wHbfyvFJyWyWvR30ughzs2AHzc8lGjrNgs90kD68f71be61
   body:
     type: json
     data: |-
-      {
+      {"salesman_id": 10,//only for owner
           "id": 5,
           "payment_reference": "REF-2026-08-001",
           "payment_date": "2026-08-03",

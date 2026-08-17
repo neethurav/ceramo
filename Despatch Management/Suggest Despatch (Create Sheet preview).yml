@@ -1,23 +1,23 @@
 info:
-  name: "Owner Show SIngle Incentive "
+  name: Suggest Despatch (Create Sheet preview)
   type: http
-  seq: 4
+  seq: 6
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/field-staff-incentives/show
+  url: https://neethu.astradevelops.in/ceramo/public/api/despatches/suggest
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 538|G7ViYrdDjyG7FztgYpn53DysCf28m4JfWbOjTWX324317585
+      value: Bearer 434|9D4uvAtxvBsmlxduEcHTGDy4V3QP4WL66lyY8JVCc2d7366a
   body:
     type: json
     data: |-
       {
-          "id": 5
+        "estimate_id": "5"
       }
 
 settings:

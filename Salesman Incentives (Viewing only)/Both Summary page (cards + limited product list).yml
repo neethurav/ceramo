@@ -1,23 +1,25 @@
 info:
-  name: Both Show SIngle Incentive
+  name: Both Summary page (cards + limited product list)
   type: http
-  seq: 4
+  seq: 1
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-incentives/show
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-incentives/summary
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 528|MtuYjx6ujXqXTXLZnriOYNxlv5DsqdqqKRaWuvPb0126d544
   body:
     type: json
     data: |-
       {
-          "id": 5
+       "salesman_id": 10,//only for owner
+          "year": 2026,
+          "month": 8
       }
 
 settings:

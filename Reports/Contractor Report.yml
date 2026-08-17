@@ -1,24 +1,25 @@
 info:
-  name: Owner Get Salesman Incentive Summary
+  name: Contractor Report
   type: http
-  seq: 2
+  seq: 5
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-incentives/summary
+  url: https://neethu.astradevelops.in/ceramo/public/api/reports/contractor-performance
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 538|G7ViYrdDjyG7FztgYpn53DysCf28m4JfWbOjTWX324317585
   body:
     type: json
-    data: |-
+    data: |
       {
-          "year": 2026,
-          "month": 8
+        "contractor_id": 5,
+        "from_date": "2026-08-01",
+        "to_date": "2026-08-31"
       }
 
 settings:

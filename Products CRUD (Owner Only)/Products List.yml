@@ -5,17 +5,17 @@ info:
 
 http:
   method: GET
-  url: https://neethu.astradevelops.in/ceramo/public/api/products?page=1&per_page=10
+  url: https://neethu.astradevelops.in/ceramo/public/api/products?page=3&per_page=10
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 375|2GvsVZrA5OuExu40mlnV9SeTvRE45FbocwjsCdBX0d53378a
+      value: Bearer 512|O3sklae5vRcfY9Y80NVri8HUy2NTc6ky2WTOBxGta30007f4
   params:
     - name: page
-      value: "1"
+      value: "3"
       type: query
     - name: per_page
       value: "10"
