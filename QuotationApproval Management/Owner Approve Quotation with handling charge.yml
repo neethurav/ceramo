@@ -1,11 +1,11 @@
 info:
-  name: "Owner Approve Estimate with handling charge "
+  name: Owner Approve Quotation with handling charge
   type: http
-  seq: 5
+  seq: 3
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/estimates/approve
+  url: https://neethu.astradevelops.in/ceramo/public/api/quotations/approve
   headers:
     - name: Accept
       value: application/json
