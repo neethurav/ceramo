@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 533|2wHbfyvFJyWyWvR30ughzs2AHzc8lGjrNgs90kD68f71be61
+      value: Bearer 596|md0j71aC1UZGDFYNA8SGtr7JVrqJgGH9ChXMeCwjc2d6a516
   params:
     - name: page
       value: "1"
@@ -25,10 +25,9 @@ http:
     data: |-
       {
         "salesman_id": 10,
-        "product_id": 33,
+        "product_id": 60,
         "year": 2026,
         "month": 8
-        
       }
 
 settings:

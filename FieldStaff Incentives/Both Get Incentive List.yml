@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 538|G7ViYrdDjyG7FztgYpn53DysCf28m4JfWbOjTWX324317585
+      value: Bearer 596|md0j71aC1UZGDFYNA8SGtr7JVrqJgGH9ChXMeCwjc2d6a516
   params:
     - name: page
       value: "1"

@@ -12,12 +12,12 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 596|md0j71aC1UZGDFYNA8SGtr7JVrqJgGH9ChXMeCwjc2d6a516
   body:
     type: json
     data: |-
       {
-          "salesman_id": "1",
+          "salesman_id": "10",
           "year": "2026",
           "month": "8"
       }

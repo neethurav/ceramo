@@ -17,7 +17,7 @@ http:
     type: json
     data: |-
       {     //Required only id,others optional
-          "id": 5,
+          "estimate_id": 5,
           "handling_charge": 500.00,
           "approval_notes": "Approved by owner",
           
