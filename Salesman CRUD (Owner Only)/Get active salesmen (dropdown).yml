@@ -1,5 +1,5 @@
 info:
-  name: "Get active salesmen "
+  name: Get active salesmen (dropdown)
   type: http
   seq: 2
 

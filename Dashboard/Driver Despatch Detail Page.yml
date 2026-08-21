@@ -1,25 +1,23 @@
 info:
-  name: Contractor Report
+  name: Driver Despatch Detail Page
   type: http
-  seq: 6
+  seq: 3
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/reports/contractor-performance
+  url: https://neethu.astradevelops.in/ceramo/public/api/drivers/show
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 538|G7ViYrdDjyG7FztgYpn53DysCf28m4JfWbOjTWX324317585
+      value: Bearer 657|DPFTIanvji5SqlDW6K4UO0h5ZvoQOasF1fwC7Qdz60cb6afc
   body:
     type: json
-    data: |
+    data: |-
       {
-        "contractor_id": 5,
-        "from_date": "2026-08-01",
-        "to_date": "2026-08-31"
+          "id": 1
       }
 
 settings:

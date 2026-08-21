@@ -1,11 +1,11 @@
 info:
-  name: "Get active Designations "
+  name: Get Active Units(dropdown)
   type: http
-  seq: 2
+  seq: 4
 
 http:
   method: GET
-  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-designations/active
+  url: https://neethu.astradevelops.in/ceramo/public/api/units/active
   headers:
     - name: Accept
       value: application/json
@@ -13,6 +13,9 @@ http:
       value: application/json
     - name: Authorization
       value: Bearer 322|R1R7WPdE0xXSArcNTm1Iru9V1bi6itOeXBbYa0sof251c965
+  body:
+    type: json
+    data: ""
 
 settings:
   encodeUrl: true

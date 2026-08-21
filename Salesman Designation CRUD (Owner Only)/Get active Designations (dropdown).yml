@@ -1,11 +1,11 @@
 info:
-  name: Driver Get My Assigned Despatches
+  name: Get active Designations (dropdown)
   type: http
-  seq: 5
+  seq: 2
 
 http:
   method: GET
-  url: https://neethu.astradevelops.in/ceramo/public/api/drivers/my-despatches
+  url: https://neethu.astradevelops.in/ceramo/public/api/salesman-designations/active
   headers:
     - name: Accept
       value: application/json
@@ -13,9 +13,6 @@ http:
       value: application/json
     - name: Authorization
       value: Bearer 322|R1R7WPdE0xXSArcNTm1Iru9V1bi6itOeXBbYa0sof251c965
-  body:
-    type: json
-    data: ""
 
 settings:
   encodeUrl: true

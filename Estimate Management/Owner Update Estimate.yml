@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 392|FGcYdFqprl0HujG9BPOnr9yRrOi1ikcI5Wcv8LdC091f1506
+      value: Bearer 647|WPgvZVvtzmperqIFGmAfIAZHsWJBmqXt4ycz7XDC21235a57
   body:
     type: json
     data: |-
@@ -51,14 +51,14 @@ http:
         
         "items": [                                // Sending items will REPLACE all existing items
           {
-            "product_id": 1,                      // Product ID from products table
+            "product_id": 60,                      // Product ID from products table
             "quantity": 200,                      // New quantity
       "box_quantity": 0,
             "piece_quantity": 40,
             "rate": 450.00                        // New rate
           },
           {
-            "product_id": 2,                      // Can add new items
+            "product_id": 61,                      // Can add new items
             "quantity": 100,
       "box_quantity": 0,
             "piece_quantity": 40,
@@ -70,7 +70,7 @@ http:
         // UPDATE SITE VISIT
         // ==========================================
         
-        "site_visit_id": 2,                       // Change to different site visit
+        "site_visit_id": 2                // Change to different site visit
         // OR
         // "site_visit_id": null,                 // Remove site visit from estimate
         // OR

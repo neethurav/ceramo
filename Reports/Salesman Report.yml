@@ -1,11 +1,11 @@
 info:
   name: Salesman Report
   type: http
-  seq: 4
+  seq: 5
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/reports/salesman-performance
+  url: https://neethu.astradevelops.in/ceramo/public/api/reports/salesman-performance
   headers:
     - name: Accept
       value: application/json

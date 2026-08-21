@@ -1,18 +1,21 @@
 info:
-  name: Get Driver List
+  name: Driver Dashboard
   type: http
-  seq: 5
+  seq: 2
 
 http:
   method: GET
-  url: https://neethu.astradevelops.in/ceramo/public/api/drivers
+  url: https://neethu.astradevelops.in/ceramo/public/api/drivers/dashboard
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 325|JGoEnwbKbt2OE3zqdWcTLIFnIkMAJ8DZqlTyVKUD071f0cba
+      value: Bearer 657|DPFTIanvji5SqlDW6K4UO0h5ZvoQOasF1fwC7Qdz60cb6afc
+  body:
+    type: json
+    data: ""
 
 settings:
   encodeUrl: true

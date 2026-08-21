@@ -16,11 +16,13 @@ http:
   body:
     type: json
     data: |-
-      {"salesman_id": 10,//only for owner
-          "id": 5,
-          "payment_reference": "REF-2026-08-001",
-          "payment_date": "2026-08-03",
-          "notes": "Incentive payment for August 2026"
+      {
+        "salesman_id": 10,
+        "year": 2026,
+        "month": 8,
+        "payment_reference": "REF-2026-08-001",
+        "payment_date": "2026-08-03",
+        "notes": "Incentive payment for August 2026"
       }
 
 settings:
