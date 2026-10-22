@@ -1,0 +1,29 @@
+info:
+  name: "Vertify OTP "
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: https://neethu.astradevelops.in/ceramo/public/api/verify-otp
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 758|E5KcKxtcWVPS6rZ45FefViXWN6wAbjsBm6POdq7o0968f27a
+  body:
+    type: json
+    data: |-
+      {
+          "email": "workwithnithuz@gmail.com",
+          "otp": "508402"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

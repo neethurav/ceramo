@@ -12,18 +12,18 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+      value: Bearer 621|3Dzo2csWvjLQX1dYLNlO0i4Rs583pPBqDaQ6iOx8edc74975
   body:
     type: json
     data: |-
       {
-          "salesman_id": "1",
+           "salesman_id": "10",
           "year": "2026",
           "month": "8",
-          "target_amount": "200000",
+          "target_amount": "250000",
           "bonus_type": "fixed", //fixed or percentage or none
           "bonus_value": "5000",
-          "has_target": "true"
+          "has_target": "1"
       }
 
 settings:
@@ -31,3 +31,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

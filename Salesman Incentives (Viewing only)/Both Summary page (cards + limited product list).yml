@@ -12,14 +12,14 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 596|md0j71aC1UZGDFYNA8SGtr7JVrqJgGH9ChXMeCwjc2d6a516
+      value: Bearer 102|tRighRFWAfWwn84e409A4PKJJBQo0GNi8m77R4ir11af2c3c
   body:
     type: json
     data: |-
       {
-       "salesman_id": 10,//only for owner
+       "salesman_id": 1,//only for owner
           "year": 2026,
-          "month": 8
+          "month": 10
       }
 
 settings:
@@ -27,3 +27,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

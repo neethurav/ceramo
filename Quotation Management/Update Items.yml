@@ -1,0 +1,33 @@
+info:
+  name: Update Items
+  type: http
+  seq: 10
+
+http:
+  method: PUT
+  url: https://neethu.astradevelops.in/ceramo/public/api/quotations/update-item
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 1097|QLTYGjqCZSDg3WrWnyEonpNqhHus78zwslwchdSeaae3b23d
+  body:
+    type: json
+    data: |-
+      {
+        "quotation_id": 14,
+        "quotation_item_id": 17,
+        "quantity": 10,
+        "rate": 450,
+        "box_quantity": 0,
+        "piece_quantity": 0
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

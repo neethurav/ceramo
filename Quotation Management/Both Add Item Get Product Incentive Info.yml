@@ -12,14 +12,16 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 403|voPJJskoJGdTF7Zl4FW8n8Yx9v1f522jz0rkW58Da0a8ce3a
+      value: Bearer 1005|Tv9KZfMzO9CCbobfd86UbHVtLWmCkET4yrgLnvEPefca72ae
   body:
     type: json
     data: |-
       {
-          "product_id": "12",
+          "product_id": "25",
           "quantity": "100",
-          "rate": "500"
+          "rate": "500",
+      "box_quantity":"100",
+      "piece_quantity":"2"
       }
 
 settings:
@@ -27,3 +29,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

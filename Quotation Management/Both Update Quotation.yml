@@ -28,6 +28,8 @@ http:
               {
                   "product_id": 12,
                   "quantity": 100,
+              "box_quantity": 2,
+            "piece_quantity": 3,
                   "rate": 500
               }
           ]
@@ -38,3 +40,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

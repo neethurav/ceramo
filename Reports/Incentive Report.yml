@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 538|G7ViYrdDjyG7FztgYpn53DysCf28m4JfWbOjTWX324317585
+      value: Bearer 1079|LaJRGQ7LvV4p2MAjujOLi0L6n9aiZE3uXRdGkW8Jc3ee840d
   params:
     - name: page
       value: "1"
@@ -22,13 +22,13 @@ http:
       type: query
   body:
     type: json
-    data: |-
-      {
+    data: |2-
+       {
         "type": "field_staff",
         "person_id": 27,
         "from_date": "2026-08-01",
         "to_date": "2026-08-31",
-        "status": "pending"
+        "status": "paid"
       }
 
 settings:
@@ -36,3 +36,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

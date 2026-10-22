@@ -5,20 +5,28 @@ info:
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/field-staff-incentives/summary
+  url: https://neethu.astradevelops.in/ceramo/public/api/field-staff-incentives/summary?page=1&per_page=10
   headers:
     - name: Accept
       value: application/json
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 596|md0j71aC1UZGDFYNA8SGtr7JVrqJgGH9ChXMeCwjc2d6a516
+      value: Bearer 755|lrtCS7CYza5k2ZIxcHwwisCnkCWpxdSyfLm3lP9P981e16dc
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: per_page
+      value: "10"
+      type: query
   body:
     type: json
     data: |
       {
                 "date_from": "2026-08-01",
-                "date_to": "2026-08-31"
+                "date_to": "2026-08-31",
+        "field_staff_id": "27"
             }
 
 settings:
@@ -26,3 +34,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer 596|md0j71aC1UZGDFYNA8SGtr7JVrqJgGH9ChXMeCwjc2d6a516
+      value: Bearer 755|lrtCS7CYza5k2ZIxcHwwisCnkCWpxdSyfLm3lP9P981e16dc
   params:
     - name: page
       value: "1"
@@ -29,3 +29,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -1,11 +1,11 @@
 info:
   name: Owner Reject Estimate
   type: http
-  seq: 4
+  seq: 6
 
 http:
   method: POST
-  url: https://neethu.astradevelops.in/ceramo/public/api/quotations/reject
+  url: https://neethu.astradevelops.in/ceramo/public/api/estimates/reject
   headers:
     - name: Accept
       value: application/json
@@ -25,3 +25,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -1,0 +1,33 @@
+info:
+  name: "Update Items "
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: https://neethu.astradevelops.in/ceramo/public/api/estimates/update-item
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 918|94AQBgHSMola7CVeKs43r6Z7bTchhgwvKWbIAnEa78d4e094
+  body:
+    type: json
+    data: |-
+      {
+         "estimate_id": 89,
+        "estimate_item_id": 105,
+        "quantity": 10,
+        "rate": 450,
+        "box_quantity": 0,
+        "piece_quantity": 0
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

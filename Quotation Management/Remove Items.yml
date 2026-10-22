@@ -1,0 +1,29 @@
+info:
+  name: Remove Items
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: https://neethu.astradevelops.in/ceramo/public/api/quotations/remove-item
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer 7vfP8q6CCZvfEZM0PEnS8MkzKjNGo8CcLPIESAYj76f61a9b
+  body:
+    type: json
+    data: |-
+      {
+        "quotation_id": 15,
+        "quotation_item_id": 42
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
